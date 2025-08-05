@@ -1,0 +1,8 @@
+[workspace]
+members = [ 
+    "crow-cli", 
+    "crow-core",
+    "crow-daemon",
+    "crow-manager",
+]
+

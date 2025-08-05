@@ -1,0 +1,31 @@
+[package]
+name = "crow-daemon"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.6", features = ["multipart"] }
+tokio = { version = "1", features = ["full"] }
+uuid = { version = "1", features = ["v4"] }
+sha2 = "0.10"
+simplelog = "0.12"
+hex = "0.4"
+
+md5 = "0.7"
+tower-http = { version = "0.3", features = ["full"] }
+
+#### logger
+log = "0.4"
+fern = "0.6"
+chrono = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1"
+
+
+tokio-postgres = "0.7"
+hyper = { version = "1.6.0", features = ["full"] }
+tokio-stream = "0.1"
+
+
+crow-core = { path = "../crow-core" }
